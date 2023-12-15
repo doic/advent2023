@@ -2,7 +2,6 @@ import fs from "fs";
 const input = fs.readFileSync("./inputs/01.txt", "utf-8");
 
 const inputArray = input.split("\n");
-console.log({ input });
 
 const extractNumbers = (input: string) => input.replaceAll(/[^\d]/g, "");
 const sumOfBoundaries = (input: string) =>
